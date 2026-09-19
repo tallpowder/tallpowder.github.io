@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿真花厂-高品质仿真花卉源头工厂与定制服务</title>
+    <meta name="description" content="专注仿真花厂生产，提供高品质仿真花卉、婚庆花艺、商业摆花及定制服务。源头工厂直供，价格实惠，款式丰富，支持OEM/ODM定制。">
+    <meta name="keywords" content="仿真花厂, 仿真花, 环保仿真花, 婚庆仿真花, 工厂直销, 花艺定制">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c5f2d;
+            --secondary-color: #97bc62;
+            --accent-color: #e63946;
+            --text-dark: #1d1d1f;
+            --text-gray: #6e6e73;
+            --bg-light: #f5f5f7;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --radius: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #1e421e;
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/seed/flowerfactory/1920/1080.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background-color: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Product Showcase */
+        .products {
+            padding: 80px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: box-shadow 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .product-card:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background-color: #f0f0f0;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-category {
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            color: var(--text-gray);
+        }
+
+        /* OEM Section */
+        .oem-section {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .oem-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .oem-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .oem-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .oem-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .check-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .check-icon {
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .oem-visual {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius);
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .oem-visual div {
+            background: rgba(255, 255, 255, 0.15);
+            height: 120px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .oem-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                恒美<span>仿真花厂</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#products">产品系列</a></li>
+                    <li><a href="#oem">工厂定制</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">获取报价</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>仿真花厂源头直供</h1>
+                <p>专注高品质仿真花卉研发与生产十年，为您提供环保、耐用、永不凋谢的装饰方案。支持OEM/ODM定制，满足婚庆、商业及家居需求。</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="cta-btn">浏览花材</a>
+                    <a href="#oem" class="btn-outline">查看定制流程</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>为什么选择恒美仿真花厂</h2>
+                    <p>源头工厂，拒绝中间商差价，品质与服务的双重保障</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌿</div>
+                        <h3>环保材质</h3>
+                        <p>采用进口丝绒、丝绸及高仿真PP棉，无毒无味，防紫外线，对人体无害，适合母婴环境。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏭</div>
+                        <h3>规模生产</h3>
+                        <p>拥有现代化厂房与专业生产线，日产能达数万枝，确保订单准时交付，现货充足。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>花色定制</h3>
+                        <p>提供多种色号选择及深度定制服务，可根据客户品牌色或设计稿打造专属花材。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✨</div>
+                        <h3>经久耐用</h3>
+                        <p>经过严格的质量检测，抗老化处理，正常使用下可保持3-5年鲜艳如初。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热销产品系列</h2>
+                    <p>涵盖家居装饰、婚庆花艺、商业展示等多种场景</p>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/rose/400/300" alt="玫瑰系列仿真花" class="product-image">
+                        <div class="product-info">
+                            <span class="product-category">经典花材</span>
+                            <h3 class="product-title">进口丝绒玫瑰系列</h3>
+                            <div class="product-tags">
+                                <span class="tag">现货</span>
+                                <span class="tag">红/粉/白</span>
+                                <span class="tag">15-25cm</span>
+                            </div>
+                            <a href="#contact" style="color: var(--primary-color); font-size: 0.9rem; font-weight: 600;">了解详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/lily/400/300" alt="百合系列仿真花" class="product-image">
+                        <div class="product-info">
+                            <span class="product-category">婚庆花艺</span>
+                            <h3 class="product-title">婚礼主纱百合</h3>
+                            <div class="product-tags">
+                                <span class="tag">定制款</span>
+                                <span class="tag">香槟色</span>
+                                <span class="tag">长杆</span>
+                            </div>
+                            <a href="#contact" style="color: var(--primary-color); font-size: 0.9rem; font-weight: 600;">了解详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/leaf/400/300" alt="仿真叶材" class="product-image">
+                        <div class="product-info">
+                            <span class="product-category">配叶配材</span>
+                            <h3 class="product-title">仿真龟背竹叶</h3>
+                            <div class="product-tags">
+                                <span class="tag">批发价</span>
+                                <span class="tag">常青</span>
+                                <span class="tag">自然卷边</span>
+                            </div>
+                            <a href="#contact" style="color: var(--primary-color); font-size: 0.9rem; font-weight: 600;">了解详情 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <img src="https://picsum.photos/seed/succulent/400/300" alt="多肉植物" class="product-image">
+                        <div class="product-info">
+                            <span class="product-category">创意摆件</span>
+                            <h3 class="product-title">仿真多肉组合盆栽</h3>
+                            <div class="product-tags">
+                                <span class="tag">创意</span>
+                                <span class="tag">陶瓷盆</span>
+                                <span class="tag">懒人必备</span>
+                            </div>
+                            <a href="#contact" style="color: var(--primary-color); font-size: 0.9rem; font-weight: 600;">了解详情 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- OEM Section -->
+        <section id="oem" class="oem-section">
+            <div class="container">
+                <div class="oem-container">
+                    <div class="oem-content">
+                        <h2>工厂定制服务</h2>
+                        <p>无论是品牌花店、婚庆公司还是大型商场，我们都能为您提供从设计打样到批量生产的一站式服务。</p>
+                        <ul class="check-list">
+                            <li><span class="check-icon">✓</span> 免费设计打样，确认效果后再量产</li>
+                            <li><span class="check-icon">✓</span> 支持贴牌生产，保护品牌权益</li>
+                            <li><span class="check-icon">✓</span> 灵活的起订量（MOQ）与付款方式</li>
+                            <li><span class="check-icon">✓</span> 出口级质量检测标准</li>
+                        </ul>
+                        <br>
+                        <a href="#contact" class="cta-btn">咨询定制方案</a>
+                    </div>
+                    <div class="oem-visual">
+                        <div>设计图纸</div>
+                        <div>样品确认</div>
+                        <div>裁剪工艺</div>
+                        <div>成品包装</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                    <p>关于仿真花采购、运输及保养的疑问</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>仿真花的保质期是多久？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            正常保存条件下，高品质仿真花可以使用3-5年甚至更久。定期清洁灰尘并避免阳光直射，可延长其使用寿命。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>你们支持一件代发吗？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            对于常规现货产品，我们支持一件代发服务。定制产品需根据具体订单情况协商，通常起订量较高。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>发货需要多长时间？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            现货产品下单后24小时内发货，定制产品需根据生产排期，通常在7-15个工作日内完成制作并发出。
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>仿真花有甲醛吗？</span>
+                            <span class="faq-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            我们工厂使用的所有原材料均为环保级，生产过程中无胶水残留，出厂前经过通风处理，确保无毒无害，您可以放心使用。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>恒美仿真花厂</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">专注仿真花生产15年，致力于为全球客户提供高品质的仿真植物装饰产品。让美好永不凋谢。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#products">产品中心</a></li>
+                        <li><a href="#oem">工厂定制</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#faq">帮助中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：sales@hengmei-flower.com</li>
+                        <li>地址：中国·广东省·广州市花都区XX路88号</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 恒美仿真花厂 版权所有 | 保留所有权利</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Toggle Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                                                       </html>
