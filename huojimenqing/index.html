@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="伙计们请起立 - 专为职场人士、体育爱好者及演讲者打造的励志互动指南。包含起立仪式规范、身体姿态矫正、激励语录以及线下活动组织建议。">
+    <meta name="keywords" content="伙计们请起立, 起立仪式, 职场激励, 体育礼仪, 身体姿态, 演讲开场">
+    <title>伙计们请起立-职场与体育激励互动指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --text-light: #666666;
+            --spacing-unit: 1rem;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px rgba(0,0,0,0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .cta-button:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Interactive Section */
+        .interaction-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .instruction-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .instruction-steps {
+            counter-reset: step;
+        }
+
+        .step {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .step-content p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .visual-demo {
+            background-color: var(--primary-color);
+            border-radius: var(--border-radius);
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .figure {
+            font-size: 8rem;
+            margin-bottom: 1rem;
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .figure.sitting {
+            transform: translateY(0);
+        }
+
+        .figure.standing {
+            transform: translateY(-100px) rotate(-5deg);
+        }
+
+        .demo-controls {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .demo-controls button {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.4);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .demo-controls button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .demo-controls button.active {
+            background: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+
+        /* Scenarios Grid */
+        .scenarios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .scenario-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .scenario-icon {
+            height: 160px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+        
+        .scenario-icon::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+
+        .scenario-content {
+            padding: 1.5rem;
+        }
+
+        .scenario-content h3 {
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .scenario-content p {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .scenario-link {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /* Quotes Section */
+        .quotes-section {
+            background-color: #fff3e0;
+            padding: 3rem 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        .quote-list {
+            max-width: 800px;
+            margin: 2rem auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .quote-item {
+            font-style: italic;
+            color: var(--primary-color);
+            position: relative;
+            padding: 0 2rem;
+        }
+
+        .quote-item::before {
+            content: '“';
+            font-size: 3rem;
+            color: var(--accent-color);
+            opacity: 0.5;
+            position: absolute;
+            top: -20px;
+            left: 0;
+            line-height: 1;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-color);
+            background-color: #fff;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 1.2rem;
+            background-color: #f9f9f9;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 1.2rem;
+        }
+
+        .faq-item.active .faq-question {
+            border-bottom: 1px solid #eee;
+        }
+
+        .icon-plus {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .icon-plus {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: rgba(255,255,255,0.7);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .interaction-area {
+                grid-template-columns: 1fr;
+            }
+
+            .visual-demo {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>🚩</span> 伙计们请起立
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#guide">行动指南</a></li>
+                    <li><a href="#scenarios">应用场景</a></li>
+                    <li><a href="#quotes">激励语录</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#guide" class="cta-button">立即体验</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>伙计们请起立<br>唤醒团队的无限潜能</h1>
+                <p>无论是在会议室的头脑风暴，还是运动场上的关键时刻，一个正确的起立动作，往往代表着态度的改变与力量的汇聚。</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" onclick="document.getElementById('guide').scrollIntoView({behavior: 'smooth'})">开始学习</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('visual-demo').classList.toggle('standing')">查看演示</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Interactive Guide Section -->
+            <section id="guide">
+                <div class="section-header">
+                    <h2>标准起立礼仪与姿态</h2>
+                    <p>掌握正确的起立姿势，展现专业形象与精神面貌。以下流程适用于大多数正式及半正式场合。</p>
+                </div>
+                
+                <div class="interaction-area">
+                    <div class="instruction-card">
+                        <div class="instruction-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>确认指令</h4>
+                                    <p>当听到“伙计们请起立”的指令时，首先确认环境是否允许起立（如会议进行中、正在播放国歌等），并保持眼神交流。</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>核心发力</h4>
+                                    <p>双脚抓地，利用大腿与臀部肌肉的力量，而非仅仅依靠上半身前倾。确保动作平稳、有力，避免发出嘈杂的摩擦声。</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>姿态维持</h4>
+                                    <p>起立后保持背部挺直，双手自然垂放或轻握于身前。避免驼背或过度伸展，保持一种自信且开放的姿态。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="visual-demo" id="visual-demo">
+                        <div class="figure sitting" id="figure">🧍</div>
+                        <p id="status-text" style="font-size: 1.2rem; font-weight: 500;">当前状态：就座</p>
+                        <div class="demo-controls">
+                            <button class="active" onclick="setPose('sitting', this)">就座</button>
+                            <button onclick="setPose('standing', this)">起立</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Scenarios Section -->
+            <section id="scenarios">
+                <div class="section-header">
+                    <h2>常见应用场景</h2>
+                    <p>“伙计们请起立”不仅仅是一个动作，它在不同的场合有着不同的深层含义。</p>
+                </div>
+
+                <div class="scenarios-grid">
+                    <article class="scenario-card">
+                        <div class="scenario-icon">👔</div>
+                        <div class="scenario-content">
+                            <h3>职场会议</h3>
+                            <p>当会议结束或进入讨论环节时，主持人或领导发出起立指令，标志着从“倾听模式”切换到“行动模式”，激发团队的参与感。</p>
+                            <a href="#" class="scenario-link">查看会议礼仪规范 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="scenario-card">
+                        <div class="scenario-icon">⚽</div>
+                        <div class="scenario-content">
+                            <h3>体育竞技</h3>
+                            <p>在比赛暂停或换人期间，教练或队长呼喊“伙计们请起立”，是为了调整球员的体能状态、心理防线并重新组织战术。</p>
+                            <a href="#" class="scenario-link">了解体育激励心理学 &rarr;</a>
+                        </div>
+                    </article>
+
+                    <article class="scenario-card">
+                        <div class="scenario-icon">🎤</div>
+                        <div class="scenario-content">
+                            <h3>演讲与授课</h3>
+                            <p>演讲者起立往往代表着准备就绪或进入高潮部分，这能通过肢体语言向观众传递信心和紧迫感。</p>
+                            <a href="#" class="scenario-link">提升演讲感染力的技巧 &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Quotes Section -->
+            <section id="quotes" class="quotes-section">
+                <h2>经典激励语录</h2>
+                <div class="quote-list">
+                    <div class="quote-item">
+                        “站起来，不要让困难把你压垮。伙计们，请起立，因为更好的明天就在前方。”
+                    </div>
+                    <div class="quote-item">
+                        “起立不仅仅是为了离开椅子，更是为了抬起你的头颅，去迎接挑战。”
+                    </div>
+                    <div class="quote-item">
+                        “行动是治愈恐惧的良药，而犹豫、拖延将不断滋养恐惧。伙计们，行动起来！”
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq">
+                <div class="section-header">
+                    <h2>常见问题解答</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            在正式商务场合，起立需要完全站直吗？
+                            <span class="icon-plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>是的，在正式商务场合，建议完全站直。保持背部挺直、双脚分开与肩同宽，这显得更加专业和尊重他人。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            如果我不小心坐过站了怎么办？
+                            <span class="icon-plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>不要慌张，可以迅速轻声道歉并快速调整姿势。动作要利落，避免长时间僵在座位上，这会显得不自信。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            这个动作在非正式聚会中适用吗？
+                            <span class="icon-plus">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>适用。在非正式聚会中，起立往往意味着某种庆祝、敬酒或结束活动的信号，能增加互动的趣味性。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo" style="color: white;">
+                <span>🚩</span> 伙计们请起立
+            </div>
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">使用条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">联系支持</a>
+            </div>
+            <p class="copyright">
+                &copy; 2023 伙计们请起立互动指南. All rights reserved. 
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Interaction Script for Visual Demo
+        function setPose(pose, btnElement) {
+            const figure = document.getElementById('figure');
+            const statusText = document.getElementById('status-text');
+            const buttons = document.querySelectorAll('.demo-controls button');
+
+            // Reset buttons
+            buttons.forEach(btn => btn.classList.remove('active'));
+            if(btnElement) btnElement.classList.add('active');
+
+            if (pose === 'standing') {
+                figure.classList.remove('sitting');
+                figure.classList.add('standing');
+                statusText.textContent = '当前状态：起立（自信姿态）';
+                statusText.style.color = '#ffe0b2';
+            } else {
+                figure.classList.remove('standing');
+                figure.classList.add('sitting');
+                statusText.textContent = '当前状态：就座（准备状态）';
+                statusText.style.color = 'white';
+            }
+        }
+
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                const isActive = parent.classList.contains('active');
+                
+                // Close all others
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+  </html>
